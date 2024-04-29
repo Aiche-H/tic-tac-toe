@@ -1,0 +1,48 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #7a7a7a;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #383838;
+    border-radius: 15px;
+    font-size: 40px;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #a1a1a1;
+  }
+  
+  #message {
+    margin-top: 20px;
+  }
+  
+  #restart-button {
+    padding: 10px 20px;
+    border: 2px solid #383838;
+    border-radius: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: #a1a1a1;
+    cursor: pointer;
+  }
+  
+  #restart-button:hover {
+    background-color: #adadad;
+  }
+  
