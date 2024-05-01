@@ -1,26 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Tic Tac Toe</title>
+  <meta name="description" content="Multiplayer Tic Tac Toe Game">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Tic Tac Toe</h1>
-    <div class="board">
-        <div class="cell" data-cell-index="0"></div>
-        <div class="cell" data-cell-index="1"></div>
-        <div class="cell" data-cell-index="2"></div>
-        <div class="cell" data-cell-index="3"></div>
-        <div class="cell" data-cell-index="4"></div>
-        <div class="cell" data-cell-index="5"></div>
-        <div class="cell" data-cell-index="6"></div>
-        <div class="cell" data-cell-index="7"></div>
-        <div class="cell" data-cell-index="8"></div>
+
+<body class="center">
+  <h1>Tic Tac Toe Game</h2>
+    <div class="center" id="main">
+      <h4>--Play and Enjoy--</h4>
+      <button onclick="start()" class="button">Start a New Game</button>
+      <br>
+      <button onclick="learn()" class="button">Learn How to Play GAME?</button>
+      <br>
+      <button class="button"><a href="https://aiche-h.github.io/homepage-start/">Homepage</a></button>
     </div>
-    <p id="message">Player X's turn</p>
-    <button id="restart-button">Restart Game</button>
+    <div class="center" id="learn">
+      <p>
+          You are X, your friend is O. 
+          <br>
+          The first player to get 3 marks in a row (up, down, across, or diagonally) is the winner.
+          When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
+      </p>
+      <br>
+      <button onclick="main()" class="button">Back</button>
+    </div>
+    <div class="center" id="game">
+      <div class="center" style="margin: 5px;">
+        <h3 id="textPlayer" style="font-size: 0.9rem;">(Current Player 1)</h2>
+          <h3 id="textComd" style="font-size: 0.9rem;">Player 2 can play now...</h2>
+      </div>
+      <canvas id="tic-tac-toe-board" class="center"></canvas>
+    </div>
     <script src="script.js"></script>
 </body>
-</html>

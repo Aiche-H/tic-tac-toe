@@ -1,48 +1,67 @@
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    background-color: #7a7a7a;
-  }
-  
-  .board {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1px;
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-  
-  .cell {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #383838;
-    border-radius: 15px;
-    font-size: 40px;
-    line-height: 100px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .cell:hover {
-    background-color: #a1a1a1;
-  }
-  
-  #message {
-    margin-top: 20px;
-  }
-  
-  #restart-button {
-    padding: 10px 20px;
-    border: 2px solid #383838;
-    border-radius: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    background-color: #a1a1a1;
-    cursor: pointer;
-  }
-  
-  #restart-button:hover {
-    background-color: #adadad;
-  }
-  
+body,html
+{
+    margin: 0px;
+    color: #000000;
+    font-size: 1.3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightblue;
+}
+
+.center
+{
+  text-align: center;
+}
+
+/* Game Board */
+#tic-tac-toe-board {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Button Style */
+.button {
+  appearance: none;
+  background-color: lightblue;
+  border: 2px solid #1A1A1A;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 5px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 0px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  background-color: aqua;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
